@@ -60,7 +60,7 @@ power s = go (0, 0, 0) games
         (res', rest) = getMax res s
 
 main = do
-  input <- readFile "data/day2_input.txt"
+  input <- readFile "input/day2.txt"
   -- part I
   print . show $ sum $ map impossible (lineSplit input)
   -- part II

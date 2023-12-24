@@ -62,7 +62,7 @@ parse' (c : xs) = parse' xs
 getNumber' s = 10 * parse s + parse' (reverse s)
 
 main = do
-  input <- readFile "data/day1_input.txt"
+  input <- readFile "input/day1.txt"
   -- part I
   print . show $ sum (map getNumber (lineSplit input))
   -- part II
